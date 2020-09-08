@@ -3,15 +3,15 @@
 }
 
 /* SPECIFY COLOR SCHEME */
-:root {
+/* :root {
   --primary-color: #00999e;
   --accent-color: #f5907c;
-}
+} */
 /* Underdog colors  */
-/* :root {
+:root {
   --primary-color: #04244c;
   --accent-color: #ffcb05;
-} */
+}
 
 /* for testing purposes  */
 

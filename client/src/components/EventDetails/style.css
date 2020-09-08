@@ -13,3 +13,8 @@ li > i {
   padding-right: 0;
   min-width: 66%;
 }
+
+.location {
+  color: grey;
+  font-size: 0.8em;
+}

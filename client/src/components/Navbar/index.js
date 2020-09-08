@@ -32,13 +32,13 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/team"
+              to="/profile"
               className={
-                window.location.pathname === "/team"
+                window.location.pathname === "/profile"
                   ? "nav-link active"
                   : "nav-link"
               }>
-              <i className="fas fa-users fa-2x"></i>
+              <i className="fas fa-user fa-2x"></i>
             </Link>
           </li>
         </ul>

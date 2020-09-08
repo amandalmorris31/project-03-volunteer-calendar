@@ -11,7 +11,7 @@ module.exports = (app) => {
     "/auth/google/callback",
     passport.authenticate("google"),
     (req, res) => {
-      res.redirect("/Calendar");
+      res.redirect("/" + userID);
     }
   );
 };

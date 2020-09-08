@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import EventCard from "../components/EventCard";
-import moment from 'moment';
-
+import CalHeader from "../components/CalHeader";
+import Search from "../components/Search";
+import moment from "moment";
 
 const GOOGLE_API_KEY = "AIzaSyAtHz02Yzb-TGWflfO9YLXH7pwXX_oKDEQ";
 
@@ -38,19 +39,20 @@ function Calendar() {
           (response) => {
             //define a variable res that only pulls the events from the response
 
-            let res = response.result.items
-            res = res.filter((event) =>{
-              return event.end.dateTime >= moment().format()
-            })
-            res = res.sort((a,b) => {
-              return a.end.dateTime.localeCompare(b.end.dateTime)
-            })
-            //setEvents redefines events to equal the array res
-            setEvents(res)
+            let res = response.result.items;
+            res = res.filter((event) => {
+              return event.end.dateTime >= moment().format();
+            });
+            res = res.sort((a, b) => {
+              return a.end.dateTime.localeCompare(b.end.dateTime);
+            });
+            console.log(res);
 
-            }, 
-            //this is a fail safe in case start() does not run
-            function(reason) {
+            //setEvents redefines events to equal the array res
+            setEvents(res);
+          },
+          //this is a fail safe in case start() does not run
+          function (reason) {
             console.log(reason);
           }
         );
@@ -61,6 +63,8 @@ function Calendar() {
 
   return (
     <>
+      <CalHeader />
+      {/* <Search handleInputChange={this.handleInputChange} /> */}
       {events.map((event) => {
         return (
           <EventCard
