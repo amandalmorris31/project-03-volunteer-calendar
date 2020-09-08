@@ -21,7 +21,6 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
-<<<<<<< HEAD
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "cookie-session": "^1.4.0",
@@ -29,13 +28,6 @@
     "if-env": "^1.0.4",
     "moment": "^2.27.0",
     "mongoose": "^5.10.3",
-=======
-    "bootstrap": "^4.5.2",
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "moment": "^2.27.0",
-    "mongoose": "^5.10.2",
->>>>>>> 74b5a856e43af00c1ef45267f6c36f341709445f
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "reactstrap": "^8.5.1",
