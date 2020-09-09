@@ -34,6 +34,7 @@ passport.use(
         first_name: profile.name.givenName,
         last_name: profile.name.familyName,
         picture: profile.photos[0].value,
+        email: profile.emails[0].value
       }).save();
       userID = user._id;
       done(null, user);
