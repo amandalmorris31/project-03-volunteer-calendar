@@ -15,7 +15,12 @@ function EventData({ start, end, title, description, location, id }) {
         location={location}
         id={id}
       />
-      <ResponseBtns />
+      <ResponseBtns
+        id={id}
+        doConfirm={confirmEvent}
+        handleBtnClick={handleBtnClick}
+      
+      />
     </div>
   );
 }

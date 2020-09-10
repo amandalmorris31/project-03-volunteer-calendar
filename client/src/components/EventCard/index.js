@@ -34,6 +34,7 @@ function EventCard({ title, start, end, description, location, id }) {
               description={description}
               location={location}
               id={id}
+              handleBtnClick={handleBtnClick}
             />
           </div>
         </div>
