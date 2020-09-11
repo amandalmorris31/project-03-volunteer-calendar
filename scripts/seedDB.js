@@ -7,6 +7,16 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/volunteercalendar"
 );
 
+<<<<<<< HEAD
+const volunteerSeed =[
+    {
+    first_name: "Amanda",
+      last_name: "Morris",
+      email: "amandalmorris31@gmail.com",
+      picture: "",
+      admin: false
+    }
+=======
 const volunteerSeed = [
   {
     first_name: "Amanda",
@@ -17,6 +27,7 @@ const volunteerSeed = [
     decline_evt: "",
     admin: false,
   },
+>>>>>>> 47f5a29b6cbb9f51274c5f896cd193889d43d9f6
 ];
 const eventSeed = [
   {

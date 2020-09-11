@@ -29,6 +29,7 @@ function EventCard({
   location,
   id,
   handleBtnClick,
+  user
 }) {
   return (
     <Striped>
@@ -42,6 +43,7 @@ function EventCard({
               description={description}
               location={location}
               id={id}
+              user={user}
               handleBtnClick={handleBtnClick}
             />
           </div>

@@ -11,11 +11,11 @@ const GOOGLE_API_KEY = "AIzaSyAtHz02Yzb-TGWflfO9YLXH7pwXX_oKDEQ";
 function Calendar() {
   //setup useState to equal events and have a function that can change the state of events
   const [events, setEvents] = useState([]);
+  const [user, setUser] = useState([]);
 
   const [userState, setUserState] = useState({});
 
   useEffect(() => {
-    console.log("mounted");
     //call getEvents function to pull calendar data
     getEvents();
   }, []);
@@ -56,7 +56,6 @@ function Calendar() {
             res = res.sort((a, b) => {
               return a.end.dateTime.localeCompare(b.end.dateTime);
             });
-            console.log(res);
 
             //setEvents redefines events to equal the array res
             setEvents(res);
@@ -71,8 +70,15 @@ function Calendar() {
     gapi.load("client", start);
   };
 
+  // const [userState, setUserState] = useState({});
 
- 
+  // function handleBtnClick(e) {
+  //   console.log(e.target.id);
+  //   const { id } = e.target;
+  //   setUserState({ ...userState, id: id });
+
+  //   API.addEvent(e.target.id).catch((err) => console.log(err));
+  // }
 
   return (
     <>

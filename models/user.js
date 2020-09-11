@@ -10,11 +10,9 @@ const userSchema = new Schema({
   googleId: String,
   accepted_events: [
     {
-      id: {
-        type: String,
-      },
-    },
-  ],
+      type: String,
+    }
+  ]
 });
 
 const User = mongoose.model("users", userSchema);
