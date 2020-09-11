@@ -34,11 +34,11 @@
 /* date font sizes  */
 /* day slightly bigger  */
 .day {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 /* month slightly smaller  */
 .month {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 /* positioning of date within badge  */

@@ -1,14 +1,11 @@
 const router = require("express").Router();
 const controller = require("../controllers/controller");
 
-router.route("/")
-  .get(controller.findAllEvents)
+router.route("/").get(controller.findAllEvents);
 
-router.route("/users")
-  .get(controller.getUserById)
-
-router.route("/events/:id").put(controller.update);
-
-
-
+router.route('/api/events/:id')
+  .put(controller.addEvent)
+  
 module.exports = router;
+
+
